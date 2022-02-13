@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.footer{
+    padding: 5px 10px;
+    background-color: #080c2b;
+}
+.footer-sections{
+    padding: 20px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 0 2rem 0;
+}
+.logo img{
+    image-rendering: pixelated;
+    width: 15%;
+    height: 20%;
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: auto;
+}
+.footer-contents{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+.ani{
+    border: 1px solid #f13489;
+    /* background-color: #f13489; */
+    height: 0.2px;
+    margin: 10px 0;
+    animation-name: ved;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+} 
+@keyframes ved{
+    0%{
+        width: 0%; 
+    }
+    25%{
+        width: 25%;
+        box-shadow: 0 0 .25px .25px #32104a;
+    }
+    50%{
+        width: 50%;
+        box-shadow: 0 0 .5px .5px #ef6693;
+    }
+    75%{
+        width: 75%;
+        box-shadow: 0 0 .75px .75px #e2ae1d; 
+    }
+    100%{
+        width: 100%;
+        /* box-shadow: 0 0 .5px .5px #02f2f4; */
+        box-shadow: 0 0 .5px .5px #fbdfe8;
+    }
+
+}
+
+ul{
+    margin: 10px 0;
+}
+.footer-map, iframe{
+    border-radius: 10px;
+    height: 320px;
+    width: 450px;
+}
+.footer-contact a{
+    text-decoration: none;
+    color: white;
+}
+.footer-contact a:hover{
+    color: aqua;
+}
+.mail, .yt, .twitter, .linkedin, .insta{
+    position: relative;
+    transition: all 1s ease-in-out;
+} 
+.mail:hover, .yt a:hover, .twitter:hover, .linkedin:hover, .insta:hover{
+    position: relative;
+    left: 20px;  
+}
+#icons-two{
+    display: none;
+    align-items: center;
+    justify-content: space-around;
+}
+.mail-two i:hover, .yt-two i:hover, .twitter-two i:hover, .linkedin-two i:hover, .insta-two i:hover{
+    color: aqua;
+}
+#icons-two a{
+    color: white;
+    text-decoration: none;
+}
+#icons-two a p{
+    display: none;
+}
+.footer-contact{
+    line-height: 6vh;
+    position: relative;
+}
+.footer-contact i{
+    width: 10%;
+}
+#icons{
+    display: block;
+    line-height: 2rem;
+    width: 18%;
+}
+.footer-contact ul{
+    list-style-type: none;
+}
+.footer-map, .footer-contact{
+    margin: 0 20px ;
+}
+
+.footer-bottom{
+    display: flex;
+    font-size: 18px;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: black;
+    padding: .8rem 0;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Kanit', sans-serif; 
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-family: 'Oswald', sans-serif; 
+    font-family: 'Shippori Antique B1', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+
+@media screen and (max-width: 1432px){
+    
+    .footer-map{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 20px;
+    }
+    .footer-contact{
+        font-size: 15px;
+    }
+    #icons{
+        line-height: 2.5rem;
+    }
+}
+@media (max-width: 1035px) and (min-width: 700px){
+    .footer-contact{
+        margin: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        font-size: 12px;
+    }
+    .logo img{
+        width: 25vw;
+        z-index: 1;
+    }
+    #icons{
+        width: 22%;
+        line-height: 2rem;
+        margin: 0;
+        font-size: 14px;
+    }
+}
+@media (max-width: 700px) and (min-width: 484px){
+
+    .footer-map iframe{
+        width: 430px;
+    }
+    .logo img{
+        width: 35vw;
+    }
+    .footer-map{
+        margin: 20px 20px 20px 5px;
+    }
+    .footer-contact{
+        width: 40%;
+    }
+    #icons{
+        width: 40%;
+    }
+}
+@media (max-width: 484px) and (min-width: 300px){
+
+    .footer-grid{
+        display: block;
+    }
+    .logo img{ 
+        width: 40vw;
+    }
+    .footer-contact{
+        width: 100%;
+        margin: 2vh 15vw;
+        text-align: center;
+    }
+    .footer-map iframe{
+        width: 75vw;
+    }
+    #icons{
+        display: none;
+    }
+    #icons-two{
+        display: flex;
+        color: white;
+        margin: 2vh;
+    }
+    #icon-two a{
+        color: white;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+}
+
+  
+/* Popup code */
+
+    
